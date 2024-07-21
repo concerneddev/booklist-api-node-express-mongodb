@@ -94,6 +94,9 @@ router.post("/login", async(request, response) => {
 // logout
 router.post('/logout', (req, res) => {
     res.json({ msg: 'User logged out' });
+
+    // delete the generated JWT from the client side
+    // that logic to be written in the frontend application
 });
 
 export default router;
